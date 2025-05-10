@@ -1,38 +1,37 @@
-
 import React from 'react';
 import { Link } from 'react-scroll';
 import logo from "/public/logo-removebg-preview.png";
-
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-medical-800 text-white py-12">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <footer className="bg-[#0b1e33] text-white py-12 relative backdrop-blur-md border-t border-blue-900/30 shadow-[inset_0_1px_0_#1a2a40]">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          
           {/* Logo and Description */}
           <div>
             <Link to="hero" smooth={true} duration={500}>
-            <div className="flex items-center cursor-pointer">
-                <img src={logo} alt="Logo" className="h-20 w-auto" />
+              <div className="flex items-center cursor-pointer">
+                <img src={logo} alt="Logo" className="h-20 w-auto drop-shadow-lg" />
               </div>
             </Link>
-            <p className="mt-4 text-gray-300">
-              Modern patient-first appointment system with WhatsApp-powered communication.
+            <p className="mt-4 text-blue-100 text-sm leading-relaxed">
+              Patient-first appointment system built for simplicity and real-time WhatsApp coordination. Welcome to the future of care.
             </p>
           </div>
-          
+
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-bold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
+            <h3 className="text-lg font-semibold mb-4 text-cyan-400 tracking-wider">Quick Links</h3>
+            <ul className="space-y-3 text-sm">
               <li>
                 <Link
                   to="features"
                   smooth={true}
                   duration={500}
-                  className="text-gray-300 hover:text-white transition-colors cursor-pointer"
+                  className="text-blue-100 hover:text-cyan-300 transition-all duration-300 cursor-pointer"
                 >
                   Features
                 </Link>
@@ -42,7 +41,7 @@ const Footer = () => {
                   to="how-it-works"
                   smooth={true}
                   duration={500}
-                  className="text-gray-300 hover:text-white transition-colors cursor-pointer"
+                  className="text-blue-100 hover:text-cyan-300 transition-all duration-300 cursor-pointer"
                 >
                   How It Works
                 </Link>
@@ -52,41 +51,41 @@ const Footer = () => {
                   to="contact"
                   smooth={true}
                   duration={500}
-                  className="text-gray-300 hover:text-white transition-colors cursor-pointer"
+                  className="text-blue-100 hover:text-cyan-300 transition-all duration-300 cursor-pointer"
                 >
                   Contact
                 </Link>
               </li>
             </ul>
           </div>
-          
+
           {/* Legal */}
           <div>
-            <h3 className="text-lg font-bold mb-4">Legal</h3>
-            <ul className="space-y-2">
+            <h3 className="text-lg font-semibold mb-4 text-cyan-400 tracking-wider">Legal</h3>
+            <ul className="space-y-3 text-sm">
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <a href="#" className="text-blue-100 hover:text-cyan-300 transition-all duration-300">
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <a href="#" className="text-blue-100 hover:text-cyan-300 transition-all duration-300">
                   Terms of Service
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <a href="#" className="text-blue-100 hover:text-cyan-300 transition-all duration-300">
                   HIPAA Compliance
                 </a>
               </li>
             </ul>
           </div>
         </div>
-        
-        {/* Copyright */}
-        <div className="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
+
+        {/* Footer Bottom */}
+        <div className="mt-12 border-t border-blue-800/30 pt-6 text-center text-blue-300 text-xs">
           <p>
-            &copy; {currentYear} DocCare Connect. All rights reserved.
+            &copy; {currentYear} <span className="text-white font-semibold">DocCare Connect</span>. All rights reserved.
           </p>
         </div>
       </div>
