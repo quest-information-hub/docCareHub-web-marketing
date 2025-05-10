@@ -11,18 +11,30 @@ const IntegrationSection = () => {
         <div className="flex flex-col lg:flex-row-reverse items-center gap-10">
 
           {/* Image Column - Clean image */}
-          <motion.div 
+          <motion.div
             className="w-full lg:w-1/2"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
           >
-            <img 
-              src={Pimage} 
-              alt="System Integration" 
-              className="w-full h-full object-cover "
-            />
+            <div className="relative mt-28">
+              <div className="absolute -top-8 -left-8 w-64 h-64 bg-gradient-to-br from-medical-100 to-blue-100 rounded-full filter blur-xl opacity-70"></div>
+              <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-gradient-to-tl from-medical-200 to-blue-200 rounded-full filter blur-xl opacity-70"></div>
+
+              <div className="relative z-10">
+                <div className="relative z-10 overflow-hidden  p-2">
+                  {/* App Interface mockup - reduced height */}
+                  <img
+                    src={Pimage}
+                    alt="Doccare"
+                    className="w-full h-auto rounded-lg"
+                  />
+                </div>
+
+                {/* Performance Metrics */}
+              </div>
+            </div>
           </motion.div>
 
           {/* Text Column wrapped in Card */}

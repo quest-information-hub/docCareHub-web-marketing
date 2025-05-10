@@ -98,7 +98,10 @@ const Hero = () => {
             <h1 className="mt-4 text-5xl md:text-5xl lg:text-4xl font-bold text-medical-800 leading-tight mb-6">
               All-in-One Clinic Management Platform
             </h1>
-            <div className="inline-block px-4 py-1 bg-gradient-to-r from-pink-400 via-purple-300 to-blue-300 p-8 rounded-full font-medium text-sm mb-6">
+            {/* <div className="inline-block px-4 py-1 bg-gradient-to-r from-pink-400 via-purple-300 to-blue-300 p-8 rounded-full font-medium text-sm mb-6">
+              Powered By: Q Information Hub
+            </div> */}
+            <div className="inline-block px-4 py-1 bg-gradient-to-r from-medical-700 to-blue-400 p-8 rounded-full font-medium text-sm mb-6 text-white">
               Powered By: Q Information Hub
             </div>
             {/* <p className="text-lg text-medical-600 mb-6 max-w-xl">
